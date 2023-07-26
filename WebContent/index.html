@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-image:url(https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWRtaW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+background-position:center;
+background-size:cover;
+background-repeat: no-repeat;
+}
+.container {
+width: 400px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+color: #333;
+margin-top: 0;
+}
+p {
+text-align: center;
+color: #777;
+margin-bottom: 20px;
+}
+label {
+display: block;
+margin-bottom: 10px;
+color: #333;
+}
+input[type="text"],
+input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+hr {
+margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+border-top: 1px solid #ccc;
+}
+a {
+color: #337ab7;
+text-decoration: none;
+}
+button[type="submit"] {
+display: block;
+width: 100%;
+padding: 10px;
+margin-top: 20px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+}
+button[type="submit"]:hover {
+background-color: #45a049;
+}
+.container.signin {
+text-align: center;
+color: #777;
+}
+</style>
+</head>
+<body>
+<form  action="LoginUser" method="post">
+<div class="container">
+<h1>Login Admin</h1>
+<p>Please fill in the details to login an account with us.</p>
+<hr>
+<label for="email"><b>Enter Email</b></label>
+<input type="text" placeholder="Enter Email" name="email">
+<label for="pwd"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="pwd">
+<hr>
+<p>By loging an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+<button type="submit" class="loginbtn"><strong>Login</strong></button>
+</div>
+<div class="container signin"> 
+<p>Note: Only Admin Access </p>
+</div>
+</form>
+</body>
+</html>
